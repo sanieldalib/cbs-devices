@@ -81,6 +81,20 @@ h3{
   height: 189px;
 }
 
+.nav-menu-web{
+  padding-left: 100px;
+}
+
+.nav-menu-tablet{
+  display: none;
+  padding-left: 41px;
+}
+
+.nav-menu-mobile{
+  display: none;
+  padding-left: 20px;
+}
+
 .devices-web .col:hover{
   background-color: #1A1A1A
 }
@@ -89,15 +103,23 @@ h3{
   background-color: #000000;
   height: 56px;
   display: flex;
-  /* justify-content: flex-end; */
   align-items: center;
+  padding: 0 0 0 0;
 }
 
 .nav-items{
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 110px;
+  margin-right: 101px;
+}
+
+.navbar-brand{
+  margin:0 0 0 0;
+}
+
+.menu-btn{
+  display: none;
 }
 
 .tab-web{
@@ -125,11 +147,13 @@ h3{
   margin: 0px 0px 0px 15px;
 }
 
-
-/* .tab-comp{
-width: 43px;
-height: 51px;
-} */
+.footer{
+  width: 100%;
+  height: 393px;
+  border-top: 1px;
+  border-top-style: solid;
+  border-top-color: white;
+}
 
 /*Device Card Styles*/
 
@@ -206,8 +230,6 @@ height: 51px;
   width: inherit;
   overflow: hidden;
   height: 0px;
-  /* transition: height 0.2s ease-out;
-  transition: height 0.2s ease-in; */
   transition: all 0.5s;
 }
 
@@ -315,7 +337,10 @@ a:hover{
 }
 
 .nav-button{
-  padding: 9px 18px 9px 18px;
+  padding: 9px 12px 9px 13px;
+  line-height: 17px;
+  width: 173px;
+  height: 35px;
 }
 
 .mob{
@@ -332,8 +357,55 @@ a:hover{
 @media screen and (max-device-width : 767px) {
   /* Styles */
 
+.navbar{
+  height: 57px;
+}
+
+.trial-button{
+  line-height: 15px;
+  font-size: 12px;
+  letter-spacing: 0.4;
+  padding: 11px 25px 10px 25px;
+}
+
+h3{
+  display: none;
+}
+
+.dropdown{
+    scroll-snap-coordinate: 240px 240px;
+}
+
+.menu-btn{
+  display: inherit;
+  margin-left: 24px;
+  width: 22px;
+  height: 23px;
+
+}
+
+.nav-button{
+  width: 144px;
+  height: 30px;
+  font-size: 11px;
+  line-height: 13px;
+}
+
   .nav-items{
-    margin-right: 10px;
+    margin-right: 20px;
+    margin-left: 3px;
+  }
+
+  .nav-menu-mobile{
+    display: inherit;
+  }
+
+  .nav-menu-web{
+    display: none;
+  }
+
+  .footer{
+    height: 301px;
   }
 
   h3{
@@ -341,12 +413,17 @@ a:hover{
   }
 
   #nav-button{
-    padding: 2px 10px 2px 10px;
+    height: 30px;
+    width: 143.11px;
   }
 
   #header-btn{
-    /* padding: 4px 15px 4px 15px; */
-    margin-top: -50px;
+    margin-top: -90px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0.4;
+    z-index: 1;
   }
 
   .col-md-3{
@@ -356,6 +433,11 @@ a:hover{
 
   .device{
     padding-bottom: 1px;
+  }
+
+  .version-text{
+    margin-right: 34px;
+    margin-left: 34px;
   }
 
   .device-inner:hover{
@@ -368,7 +450,8 @@ a:hover{
   }
 
   h1{
-    font-size: 26px;
+    font-size: 20px;
+    font-weight: 500;
     margin-left: 5px;
     margin-right: 5px;
   }
@@ -379,6 +462,7 @@ a:hover{
 
   .content-slider{
     height: 30px;
+    z-index: -1;
   }
 
   .mask{
@@ -386,7 +470,8 @@ a:hover{
   }
 
   .quote{
-    font-size: 26px !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
     position: relative;
   }
 
@@ -442,16 +527,32 @@ a:hover{
 /*END MOBILE STYLES*/
 
 /* TABLET STYLES */
-@media screen and (min-device-width : 768px)and (max-device-width : 1024px){
+@media screen and (min-device-width : 768px)and (max-device-width : 1050px){
 
   .device-name{
     font-size: 16px;
     font-weight: normal;
   }
 
+  .nav-items{
+    margin-right: 40px;
+  }
+
+  /* .nav-button{
+    padding: 12px 16px 12px 16px;
+  } */
+
   .col-md-3{
     padding: 0px 10px 0px 10px;
     width: 25vw;
+  }
+
+  .nav-menu-web{
+    display: none;
+  }
+
+  .nav-menu-tablet{
+    display: inline;
   }
 }
 /* END TABLET STYLES */

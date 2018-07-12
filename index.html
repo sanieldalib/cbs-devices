@@ -14,10 +14,13 @@
 <body>
   <nav class="navbar navbar">
     <a class="navbar-brand" href="#">
-      <img src="assets/logo.png" width="87" height="25" alt="">
+      <img src="assets/web/nav-menu.png" class="nav-menu-web" height="25" alt="">
+      <img src="assets/nav-menu-tablet.png" class="nav-menu-tablet" height="25" alt="">
+      <img src="assets/mobile/logo.png" class="nav-menu-mobile" height="25" alt="">
     </a>
     <div class="nav-items">
       <button class="btn nav-button" id="nav-button">TRY CBS ALL ACCESS</button>
+      <img src="assets/mobile/menu-btn.png" class="menu-btn" alt="">
       <h3>SIGN IN</h3>
     </div>
 
@@ -512,13 +515,15 @@
     </div>
   </div>
 </div>
+
+<div class="footer"></div>
 </div>
 
 
 <!-- Optional JavaScript -->
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script>
@@ -533,6 +538,7 @@ $(".device-inner").click(function(event){
   var height = dropdown.css('height');
   height == "0px" ? dropdown.css('height', "151px") : dropdown.css('height', "0px");
   height == "0px" ? carat.css('transform', "rotate(180deg)") : carat.css('transform', "rotate(0deg)")
+  goToByScroll(dropdown);
 });
 
 
@@ -557,6 +563,17 @@ $(function(){
         }
     });
 });
+
+function goToByScroll(div) {
+    // Scroll
+    console.log()
+    if($(window).width() < 768){
+    console.log(div.position());
+    $('html,body').animate({
+        scrollTop: div.position().top - 151
+    }, 'slow');
+}
+}
 
 
 
