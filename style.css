@@ -135,7 +135,8 @@ h3{
   text-align: left;
   font-size: 20px;
   font-weight: 300;
-  height: 146px;
+  height: 120px;
+  padding: 0px 0px 0px 0px !important;
 }
 
 .tab-item{
@@ -165,7 +166,7 @@ h3{
 /*Device Card Styles*/
 
 #grid{
-  max-width: 1120px;
+  max-width: 1056px;
   margin: 0 auto;
 }
 
@@ -220,7 +221,7 @@ h3{
 }
 
 .col-md-3{
-  padding: 0px 21px 20px 21px;
+  padding: 0px 13px 20px 13px;
   background-color: #121212
 }
 
@@ -360,6 +361,13 @@ a:hover{
   display: none;
 }
 
+.section-header{
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  display: none;
+}
+
 
 /* MOBILE STYLES */
 
@@ -417,12 +425,16 @@ a:hover{
     display: none;
   }
 
+.section-header{
+  display: inherit;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  text-align: left;
+  margin-left: -10px;
+}
+
   .footer{
     height: 301px;
-  }
-
-  h3{
-    display: none;
   }
 
   #nav-button{

@@ -292,6 +292,7 @@
           </div>
         </div>
       </div>
+      <div class="section-header">Computers, Phones & Tablets</div>
       <div class="row mob mob-on" id="ctp-row">
         <div class="col-6 col-md-3">
           <div class="device" id="m1">
@@ -550,35 +551,53 @@ $(function(){
 
 
 $(function(){
-    $('.tab-item').click(function(event){
-        if($(window).width() < 768){
-          var id = event.currentTarget.id;
-          var div = $("#" + id + "-row");
-          $('.mob-on').toggleClass('mob-off');
-          $('.mob-on').toggleClass('mob-on');
-          div.toggleClass('mob-off');
-          div.toggleClass('mob-on');
+  $('.tab-item').click(function(event){
+    if($(window).width() < 768){
+      var id = event.currentTarget.id;
+      console.log(id);
+      var div = $("#" + id + "-row");
+      $('.mob-on').toggleClass('mob-off');
+      $('.mob-on').toggleClass('mob-on');
+      div.toggleClass('mob-off');
+      div.toggleClass('mob-on');
 
-          $('.selected').toggleClass('selected');
-          $('#' + id ).toggleClass('selected');
+      $('.selected').toggleClass('selected');
+      $('#' + id ).toggleClass('selected');
 
-          $('.blue').addClass('unselected');
-          $('.white').removeClass('unselected');
-          $('#' + id + " > .white").toggleClass('unselected');
-          $('#' + id + " > .blue").toggleClass('unselected');
-        }
-    });
+      $('.blue').addClass('unselected');
+      $('.white').removeClass('unselected');
+      $('#' + id + " > .white").toggleClass('unselected');
+      $('#' + id + " > .blue").toggleClass('unselected');
+
+      switch (id){
+        case 'ctp':
+        $('.section-header').empty();
+        $('.section-header').html('Computers, Phones & Tablets');
+        break;
+        case 'tvp':
+        $('.section-header').html('TV\'s & Players');
+        break;
+        case 'consoles':
+        $('.section-header').html('Consoles');
+        break;
+        case 'smarthome':
+        $('.section-header').html('Smart Home Devices');
+        break;
+        default: break;
+      }
+    }
+  });
 });
 
 function goToByScroll(div) {
-    // Scroll
-    console.log()
-    if($(window).width() < 768){
+  // Scroll
+  console.log()
+  if($(window).width() < 768){
     console.log(div.position());
     $('html,body').animate({
-        scrollTop: div.position().top - 151
+      scrollTop: div.position().top - 151
     }, 'slow');
-}
+  }
 }
 
 
