@@ -99,6 +99,13 @@ h3{
   background-color: #1A1A1A
 }
 
+.sticky-top-tabs{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 55px;
+  z-index: 1020;
+}
+
 .navbar{
   background-color: #000000;
   height: 56px;
@@ -291,6 +298,8 @@ a:hover{
   text-align: center;
   margin-bottom: 25px;
   line-height: 15px;
+  margin-right: 34px;
+  margin-left: 34px;
 }
 /* End Device Card Styles */
 
@@ -357,39 +366,43 @@ a:hover{
 @media screen and (max-device-width : 767px) {
   /* Styles */
 
-.navbar{
-  height: 57px;
-}
+  .navbar{
+    height: 57px;
+  }
 
-.trial-button{
-  line-height: 15px;
-  font-size: 12px;
-  letter-spacing: 0.4;
-  padding: 11px 25px 10px 25px;
-}
+  .trial-button{
+    line-height: 15px;
+    font-size: 12px;
+    letter-spacing: 0.4;
+    padding: 11px 25px 10px 25px;
+  }
 
-h3{
-  display: none;
-}
+  .row{
+    flex-wrap: inherit;
+  }
 
-.dropdown{
+  h3{
+    display: none;
+  }
+
+  .dropdown{
     scroll-snap-coordinate: 240px 240px;
-}
+  }
 
-.menu-btn{
-  display: inherit;
-  margin-left: 24px;
-  width: 22px;
-  height: 23px;
+  .menu-btn{
+    display: inherit;
+    margin-left: 24px;
+    width: 22px;
+    height: 23px;
 
-}
+  }
 
-.nav-button{
-  width: 144px;
-  height: 30px;
-  font-size: 11px;
-  line-height: 13px;
-}
+  .nav-button{
+    width: 144px;
+    height: 30px;
+    font-size: 11px;
+    line-height: 13px;
+  }
 
   .nav-items{
     margin-right: 20px;
@@ -435,9 +448,10 @@ h3{
     padding-bottom: 1px;
   }
 
-  .version-text{
-    margin-right: 34px;
-    margin-left: 34px;
+  #grid{
+    max-width: calc(100vw - 43px);
+    margin-left: 21px;
+    margin-right: 22px;
   }
 
   .device-inner:hover{
@@ -513,13 +527,6 @@ h3{
   .unselected{
     display: none;
   }
-
-
-  /* .tab-web img{
-  display: none;
-  } */
-
-
 }
 
 
@@ -537,10 +544,6 @@ h3{
   .nav-items{
     margin-right: 40px;
   }
-
-  /* .nav-button{
-    padding: 12px 16px 12px 16px;
-  } */
 
   .col-md-3{
     padding: 0px 10px 0px 10px;
