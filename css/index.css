@@ -1,52 +1,41 @@
-/* @font-face {
-font-family: "Proxima Nova";
-src: url("fonts/ProximaNova-Reg.ttf") format("truetype"),
-url("fonts/ProximaNova-Black.ttf") format("truetype"),
-url("fonts/ProximaNova-Bold.ttf") format("truetype"),
-url("fonts/ProximaNova-Light.ttf") format("truetype"),
-url("fonts/ProximaNova-Sbold.ttf") format("truetype"),
-url("fonts/ProximaNova-Tihn.ttf") format("truetype"),
-url("fonts/ProximaNova-XBold.ttf") format("truetype");
-} */
-
 @font-face {
   font-family: "ProximaNova";
-  src: url("fonts/ProximaNova-Reg.ttf");
+  src: url("../fonts/ProximaNova-Reg.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "ProximaNova";
-  src: url("fonts/ProximaNova-Light.ttf");
+  src: url("../fonts/ProximaNova-Light.ttf");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: "ProximaNova";
-  src: url("fonts/ProximaNova-Thin.ttf");
+  src: url("../fonts/ProximaNova-Thin.ttf");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: "ProximaNova";
-  src: url("fonts/ProximaNova-Bold.ttf");
+  src: url("../fonts/ProximaNova-Bold.ttf");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "ProximaNova";
-  src: url("fonts/ProximaNova-Sbold.ttf");
+  src: url("../fonts/ProximaNova-Sbold.ttf");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "ProximaNova";
-  src: url("fonts/ProximaNova-Black.ttf");
+  src: url("../fonts/ProximaNova-Black.ttf");
   font-weight: 900;
   font-style: normal;
 }
@@ -186,7 +175,7 @@ h3{
 }
 
 .device{
-  padding-bottom: 20px;
+  padding-bottom: 26px;
 }
 
 .device-none{
@@ -304,12 +293,11 @@ a:hover{
 }
 /* End Device Card Styles */
 
-
 #header-img{
   max-width: 100%;
   width: 100%;
   height: 60vh;
-  background-image: url(assets/headerimg.png);
+  background-image: url(../assets/headerimg.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -518,10 +506,6 @@ a:hover{
     border-bottom: 3px;
     border-bottom-style: solid;
     border-bottom-color: #0092F3;
-  }
-
-  .tab-web{
-    height: 120px;
   }
 
   .web{
