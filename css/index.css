@@ -352,6 +352,7 @@ a:hover{
 .section-header{
   font-size: 18px;
   font-weight: normal;
+/* background-image: linear-gradient(-180deg, #1D1D1D 0%, #121212 100%); */
   color: white;
   display: none;
 }

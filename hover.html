@@ -25,518 +25,505 @@
     </div>
 
   </nav>
+
   <div class="container" id="header-img">
     <div class="header-content">
       <h1>Watch CBS All Access On</h1>
-      <div class="content-slider">
-        <div class="slider">
-          <div class="mask">
-            <ul>
-              <li class="anim1">
-                <div class="quote">Xbox One</div>
-              </li>
-              <li class="anim2">
-                <div class="quote">PlayStation 4</div>
-              </li>
-              <li class="anim3">
-                <div class="quote">CBS.com</div>
-              </li>
-              <li class="anim4">
-                <div class="quote">Windows 10</div>
-              </li>
-              <li class="anim5">
-                <div class="quote">Google Home</div>
-              </li>
+      <h1 id="rotate">default</h1>
+            <ul style="display:none">
+              <li>Xbox One</li>
+              <li>PlayStation 4</li>
+              <li>Roku</li>
+              <li>CBS.com</li>
             </ul>
-          </div>
-        </div>
-      </div>
 
 
       <button class="btn trial-button" id="header-btn">START FREE TRIAL</button>
     </div>
-  </div>
-  <div class="container" id="grid">
-    <div class="row sticky-top-tabs" id="tabs-web">
-      <div class="col-md-3 tab-web">
-        <div class="tab-item selected" id="ctp">
-          <img class="tab-comp white unselected" src="assets/web/phone.svg" alt="">
-          <img class="tab-comp blue" src="assets/web/phone-selected.svg" alt="">
-          <p class="tab-title">Computers, <br> Phones & Tablets</p>
-        </div>
-      </div>
-      <div class="col-md-3 tab-web">
-        <div class="tab-item" id="tvp">
-          <img class="tab-comp white" src="assets/web/tv.svg" alt="">
-          <img class="tab-comp blue unselected" src="assets/web/tv-selected.svg" alt="">
-          <p class="tab-title">TV's & Players</p>
-        </div>
-      </div>
-      <div class="col-md-3 tab-web">
-        <div class="tab-item" id="consoles">
-          <img class="tab-comp white" src="assets/web/console.svg" alt="">
-          <img class="tab-comp blue unselected" src="assets/web/console-selected.svg" alt="">
-          <p class="tab-title">Consoles</p>
-        </div>
-      </div>
-      <div class="col-md-3 tab-web">
-        <div class="tab-item" id="smarthome">
-          <img class="tab-comp white" src="assets/web/phone.svg" alt="">
-          <img class="tab-comp blue unselected" src="assets/web/phone-selected.svg" alt="">
-          <p class="tab-title">Smart Home<br>Devices</p>
-        </div>
+    <video autoplay muted loop id="video-background" poster="assets/headerimg.png">
+      <source src="assets/devicepage.mp4" type="video/mp4">
+      </video>
+      <!-- <div data-poster-url="https://uploads-ssl.webflow.com/5a960aa50f177000014a8d02/5b4d19e1e040d1877809ebf4_ST_Trailer-poster-00001.jpg" data-video-urls="https://uploads-ssl.webflow.com/5a960aa50f177000014a8d02/5b4d19e1e040d1877809ebf4_ST_Trailer-transcode.webm,https://uploads-ssl.webflow.com/5a960aa50f177000014a8d02/5b4d19e1e040d1877809ebf4_ST_Trailer-transcode.mp4" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video-5 w-background-video w-background-video-atom">
+      <video autoplay="" loop="" style="background-image:url(&quot;https://uploads-ssl.webflow.com/5a960aa50f177000014a8d02/5b4d19e1e040d1877809ebf4_ST_Trailer-poster-00001.jpg&quot;)" muted="" data-wf-ignore="true"><source src="https://uploads-ssl.webflow.com/5a960aa50f177000014a8d02/5b4d19e1e040d1877809ebf4_ST_Trailer-transcode.webm" data-wf-ignore="true">
+      <source src="https://uploads-ssl.webflow.com/5a960aa50f177000014a8d02/5b4d19e1e040d1877809ebf4_ST_Trailer-transcode.mp4" data-wf-ignore="true">
+    </video>
+  </div> -->
+</div>
+<div id="tabbar"></div>
+<div class="container" id="grid">
+  <div class="row sticky-top-tabs" id="tabs-web">
+    <div class="col-md-3 tab-web">
+      <div class="tab-item selected" id="ctp">
+        <img class="tab-comp" src="assets/web/phone.svg" alt="">
+        <p class="tab-title">Computers, <br> Phones & Tablets</p>
       </div>
     </div>
-    <div class="devices-web">
-      <div class="row web">
-        <div class="col-6 col-md-3">
-          <div class="device" id="1">
-            <div class="device-inner" id="1">
-              <img src="assets/carat.png" class="carat" id="1">
-              <div class="device-flex" id="1">
-                <img src="assets/web/microsoft.png">
-                <p class="device-name">Windows 10</p>
-              </div>
-            </div>
-            <div class="dropdown w-btn" id="1">
-              <p class="device-name drop-text">Windows 10</p>
-              <button class="drop-btn">DOWNLOAD APP</button>
-              <p class="help-text">Visit our <a href="#">Help Center</a></p>
-              <p class="version-info">Windows 10+</p>
-            </div>
-          </div>
-          <div class="device" id="2">
-            <div class="device-inner" id="2">
-              <img src="assets/carat.png" class="carat" id="2">
-              <div class="device-flex" id="2">
-                <img class="img-fluid"src="assets/web/android.png">
-                <p class="device-name">Android</p>
-              </div>
-            </div>
-            <div class="dropdown" id="2">
-              <p class="device-name drop-text">Android</p>
-              <button class="drop-btn">DOWNLOAD APP</button>
-              <p class="help-text">Visit our <a href="#">Help Center</a></p>
-              <p class="version-info">Android 4.1+</p>
-            </div>
-          </div>
-          <div class="device" id="3">
-            <div class="device-inner" id="3">
-              <img src="assets/carat.png" class="carat" id="3">
-              <div class="device-flex" id="3">
-                <img class="img-fluid" src="assets/web/apple.png">
-                <p class="device-name">Apple</p>
-              </div>
-            </div>
-            <div class="dropdown" id="3">
-              <p class="device-name drop-text">Apple</p>
-              <button class="drop-btn">DOWNLOAD APP</button>
-              <p class="help-text">Visit our <a href="#">Help Center</a></p>
-              <p class="version-info">iOS 9+</p>
-            </div>
-          </div>
-          <div class="device" id="4">
-            <div class="device-inner" id="4">
-              <img src="assets/carat.png" class="carat" id="4">
-              <div class='device-inner'>
-                <div class="device-flex" id="4">
-                  <img class="img-fluid" src="assets/web/cbs.png">
-                  <p class="device-name">CBS.com</p>
-                </div>
-              </div>
-            </div>
-            <div class="dropdown" id="4">
-              <div class='dropdown-inner'>
-                <button class="drop-btn">DOWNLOAD APP</button>
-                <p class="help-text">Visit our <a href="#">Help Center</a></p>
-                <p class="version-info">Windows 10+</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="device" id="5">
-            <div class="device-inner" id="5">
-              <img src="assets/carat.png" class="carat" id="5">
-              <div class="device-flex" id="5">
-                <img class="img-fluid" src="assets/web/appletv.png">
-                <p class="device-name">Apple TV</p>
-              </div>
-            </div>
-            <div class="dropdown no-btn" id="5">
-              <div class='dropdown-inner'>
-                <button class="drop-btn">DOWNLOAD APP</button>
-                <p class="help-text">Visit our <a href="#">Help Center</a></p>
-                <p class="version-info">Windows 10+</p>
-              </div>
-            </div>
-          </div>
-          <div class="device" id="6">
-            <div class="device-inner" id="6">
-              <img src="assets/carat.png" class="carat" id="6">
-              <div class="device-flex" id="6">
-                <img class="img-fluid" src="assets/web/android.png">
-                <p class="device-name">Android TV</p>
-              </div>
-            </div>
-            <div class="dropdown" id="6">
-              <div class='dropdown-inner'>
-                <button class="drop-btn">DOWNLOAD APP</button>
-                <p class="help-text">Visit our <a href="#">Help Center</a></p>
-                <p class="version-info">Windows 10+</p>
-              </div>
-            </div>
-          </div>
-          <div class="device" id="7">
-            <div class="device-inner" id="7">
-              <img src="assets/carat.png" class="carat" id="7">
-              <div class="device-flex" id="7">
-                <img class="img-fluid" src="assets/web/chromecast.png">
-                <p class="device-name">Chromecast</p>
-              </div>
-            </div>
-            <div class="dropdown" id="7">
-              <div class='dropdown-inner'>
-                <button class="drop-btn">DOWNLOAD APP</button>
-                <p class="help-text">Visit our <a href="#">Help Center</a></p>
-                <p class="version-info">Windows 10+</p>
-              </div>
-            </div>
-          </div>
-          <div class="device" id="8">
-            <div class="device-inner" id="8">
-              <img src="assets/carat.png" class="carat" id="8">
-              <div class="device-flex" id="8">
-                <img class="img-fluid" src="assets/web/roku.png">
-                <p class="device-name">Roku</p>
-              </div>
-            </div>
-            <div class="dropdown" id="8">
-              <div class='dropdown-inner'>
-
-                <button class="drop-btn">DOWNLOAD APP</button>
-                <p class="help-text">Visit our <a href="#">Help Center</a></p>
-                <p class="version-info">Windows 10+</p>
-              </div>
-            </div>
-          </div>
-          <div class="device" id="9">
-            <div class="device-inner" id="9">
-              <img src="assets/carat.png" class="carat" id="9">
-              <div class="device-flex" id="9">
-                <img class="img-fluid" src="assets/web/samsung.png">
-                <p class="device-name">Samsung</p>
-              </div>
-            </div>
-            <div class="dropdown" id="9">
-              <div class='dropdown-inner'>
-                <button class="drop-btn">DOWNLOAD APP</button>
-                <p class="help-text">Visit our <a href="#">Help Center</a></p>
-                <p class="version-info">Windows 10+</p>
-              </div>
-            </div>
-          </div>
-          <div class="device" id="10">
-            <div class="device-inner" id="10">
-              <img src="assets/carat.png" class="carat" id="10">
-              <div class="device-flex" id="10">
-                <img class="img-fluid" src="assets/web/firetv.png">
-                <p class="device-name">Amazon Fire TV</p>
-              </div>
-            </div>
-            <div class="dropdown" id="10">
-              <div class='dropdown-inner'>
-                <button class="drop-btn">DOWNLOAD APP</button>
-                <p class="help-text">Visit our <a href="#">Help Center</a></p>
-                <p class="version-info">Windows 10+</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="device" id="11">
-            <div class="device-inner" id="11">
-              <img src="assets/carat.png" class="carat" id="11">
-              <div class="device-flex" id="11">
-                <img class="img-fluid" src="assets/web/xbox-one.png">
-                <p class="device-name">Xbox One</p>
-              </div>
-            </div>
-            <div class="dropdown" id="11">
-              <button class="drop-btn">DOWNLOAD APP</button>
-              <p class="help-text">Visit our <a href="#">Help Center</a></p>
-              <p class="version-info">Windows 10+</p>
-            </div>
-          </div>
-          <div class="device" id="12">
-            <div class="device-inner" id="12">
-              <img src="assets/carat.png" class="carat" id="12">
-              <div class="device-flex" id="12">
-                <img class="img-fluid" src="assets/web/ps4.png">
-                <p class="device-name">PlayStation 4</p>
-              </div>
-            </div>
-            <div class="dropdown" id="12">
-              <button class="drop-btn">DOWNLOAD APP</button>
-              <p class="help-text">Visit our <a href="#">Help Center</a></p>
-              <p class="version-info">Windows 10+</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="device" id="13">
-            <div class="device-inner" id="13">
-              <img src="assets/carat.png" class="carat" id="13">
-              <div class="device-flex" id="13">
-                <img class="img-fluid" src="assets/web/alexa2.png">
-                <p class="device-name">Amazon Alexa</p>
-              </div>
-            </div>
-            <div class="dropdown" id="13">
-              <button class="drop-btn">DOWNLOAD APP</button>
-              <p class="help-text">Visit our <a href="#">Help Center</a></p>
-              <p class="version-info">Windows 10+</p>
-            </div>
-          </div>
-          <div class="device" id="14">
-            <div class="device-inner" id="14">
-              <img src="assets/carat.png" class="carat" id=14"">
-              <div class="device-flex" id="14">
-                <img class="img-fluid" src="assets/web/google-home.png">
-                <p class="device-name">Google Home</p>
-              </div>
-            </div>
-            <div class="dropdown" id="14">
-              <button class="drop-btn">DOWNLOAD APP</button>
-              <p class="help-text">Visit our <a href="#">Help Center</a></p>
-              <p class="version-info">Windows 10+</p>
-            </div>
-          </div>
-        </div>
+    <div class="col-md-3 tab-web">
+      <div class="tab-item" id="tvp">
+        <img class="tab-comp" src="assets/web/tv.svg" alt="">
+        <p class="tab-title">TV's & Players</p>
       </div>
-      <div class="section-header">Computers, Phones & Tablets</div>
-      <div class="row mob mob-on" id="ctp-row">
-        <div class="col-6 col-md-3">
-          <div class="device" id="m1">
-            <div class="device-inner" id="m1">
-              <img src="assets/carat.png" class="carat" id="m1">
-              <div class="device-flex" id="m1">
-                <img src="assets/web/microsoft.png">
-                <p class="device-name">Windows 10</p>
-              </div>
-            </div>
-            <div class="dropdown w-btn" id="m1">
-              <button class="drop-btn">DOWNLOAD APP</button>
-              <p class="help-text">Visit our <a href="#">Help Center</a></p>
-              <p class="version-info">Windows 10+</p>
+    </div>
+    <div class="col-md-3 tab-web">
+      <div class="tab-item" id="consoles">
+        <img class="tab-comp" src="assets/web/console.svg" alt="">
+        <p class="tab-title">Consoles</p>
+      </div>
+    </div>
+    <div class="col-md-3 tab-web">
+      <div class="tab-item" id="smarthome">
+        <img class="tab-comp" src="assets/web/smarthome.svg" alt="">
+        <p class="tab-title">Smart Home<br>Devices</p>
+      </div>
+    </div>
+  </div>
+  <span id="anchor"></span>
+  <div class="section-header">Computers, Phones & Tablets</div>
+  <div class="devices-web" id="devices">
+    <div class="row web">
+      <div class="col-6 col-md-3">
+        <div class="device" id="1">
+          <div class="device-inner" id="1">
+            <img src="assets/carat.png" class="carat" id="1">
+            <div class="device-flex" id="1">
+              <img src="assets/web/microsoft.png">
+              <p class="device-name">Windows 10</p>
             </div>
           </div>
-          <div class="device" id="m3">
-            <div class="device-inner" id="m3">
-              <img src="assets/carat.png" class="carat" id="m3">
-              <div class="device-flex" id="m3">
-                <img class="img-fluid" src="assets/web/apple.png">
-                <p class="device-name">Apple</p>
-              </div>
-            </div>
-            <div class="dropdown" id="m3">
-              <button class="drop-btn">DOWNLOAD APP</button>
-              <p class="help-text">Visit our <a href="#">Help Center</a></p>
-              <p class="version-info">iOS 9+</p>
-            </div>
+          <div class="dropdown w-btn" id="1">
+            <p class="device-name drop-text">Windows 10</p>
+            <button class="drop-btn">DOWNLOAD APP</button>
+            <p class="help-text">Visit our <a href="#">Help Center</a></p>
+            <p class="version-info">Windows 10+</p>
           </div>
         </div>
-        <div class="col-6 col-md-3">
-          <div class="device" id="m2">
-            <div class="device-inner" id="m2">
-              <img src="assets/carat.png" class="carat" id="m2">
-              <div class="device-flex" id="m2">
-                <img class="img-fluid"src="assets/web/android.png">
-                <p class="device-name">Android</p>
-              </div>
-            </div>
-            <div class="dropdown" id="m2">
-              <button class="drop-btn">DOWNLOAD APP</button>
-              <p class="help-text">Visit our <a href="#">Help Center</a></p>
-              <p class="version-info">Android 4.1+</p>
+        <div class="device" id="2">
+          <div class="device-inner" id="2">
+            <img src="assets/carat.png" class="carat" id="2">
+            <div class="device-flex" id="2">
+              <img class="img-fluid"src="assets/web/android.png">
+              <p class="device-name">Android</p>
             </div>
           </div>
-          <div class="device" id="m4">
-            <div class="device-inner" id="m4">
-              <img src="assets/carat.png" class="carat" id="m4">
-              <div class="device-flex" id="m4">
+          <div class="dropdown" id="2">
+            <p class="device-name drop-text">Android</p>
+            <!-- <button class="drop-btn">DOWNLOAD APP</button> -->
+            <p class="help-text">Visit our <a href="#">Help Center</a></p>
+            <p class="version-info">Android 4.1+</p>
+          </div>
+        </div>
+        <div class="device" id="3">
+          <div class="device-inner" id="3">
+            <img src="assets/carat.png" class="carat" id="3">
+            <div class="device-flex" id="3">
+              <img class="img-fluid" src="assets/web/apple.png">
+              <p class="device-name">Apple</p>
+            </div>
+          </div>
+          <div class="dropdown" id="3">
+            <p class="device-name drop-text">Apple</p>
+            <button class="drop-btn">DOWNLOAD APP</button>
+            <p class="help-text">Visit our <a href="#">Help Center</a></p>
+            <p class="version-info">iOS 9+</p>
+          </div>
+        </div>
+        <div class="device" id="4">
+          <div class="device-inner" id="4">
+            <img src="assets/carat.png" class="carat" id="4">
+            <div class='device-inner'>
+              <div class="device-flex" id="4">
                 <img class="img-fluid" src="assets/web/cbs.png">
                 <p class="device-name">CBS.com</p>
               </div>
             </div>
-            <div class="dropdown" id="m4">
+          </div>
+          <div class="dropdown" id="4">
+              <p class="device-name drop-text">CBS.com</p>
               <button class="drop-btn">DOWNLOAD APP</button>
               <p class="help-text">Visit our <a href="#">Help Center</a></p>
               <p class="version-info">Windows 10+</p>
             </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="device" id="5">
+          <div class="device-inner" id="5">
+            <img src="assets/carat.png" class="carat" id="5">
+            <div class="device-flex" id="5">
+              <img class="img-fluid" src="assets/web/appletv.png">
+              <p class="device-name">Apple TV</p>
+            </div>
+          </div>
+          <div class="dropdown" id="5">
+              <p class="device-name drop-text">Apple TV</p>
+              <p class="help-text">Visit our <a href="#">Help Center</a></p>
+              <p class="version-info">Windows 10+</p>
+          </div>
+        </div>
+        <div class="device" id="6">
+          <div class="device-inner" id="6">
+            <img src="assets/carat.png" class="carat" id="6">
+            <div class="device-flex" id="6">
+              <img class="img-fluid" src="assets/web/android.png">
+              <p class="device-name">Android TV</p>
+            </div>
+          </div>
+          <div class="dropdown" id="6">
+              <p class="device-name drop-text">Android TV</p>
+              <button class="drop-btn">DOWNLOAD APP</button>
+              <p class="help-text">Visit our <a href="#">Help Center</a></p>
+              <p class="version-info">Windows 10+</p>
+          </div>
+        </div>
+        <div class="device" id="7">
+          <div class="device-inner" id="7">
+            <img src="assets/carat.png" class="carat" id="7">
+            <div class="device-flex" id="7">
+              <img class="img-fluid" src="assets/web/chromecast.png">
+              <p class="device-name">Chromecast</p>
+            </div>
+          </div>
+          <div class="dropdown" id="7">
+              <p class="device-name drop-text">Chromecast</p>
+              <p class="help-text">Visit our <a href="#">Help Center</a></p>
+              <p class="version-info">Windows 10+</p>
+          </div>
+        </div>
+        <div class="device" id="8">
+          <div class="device-inner" id="8">
+            <img src="assets/carat.png" class="carat" id="8">
+            <div class="device-flex" id="8">
+              <img class="img-fluid" src="assets/web/roku.png">
+              <p class="device-name">Roku</p>
+            </div>
+          </div>
+          <div class="dropdown" id="8">
+              <p class="device-name drop-text">Roku</p>
+              <button class="drop-btn">DOWNLOAD APP</button>
+              <p class="help-text">Visit our <a href="#">Help Center</a></p>
+              <p class="version-info">Windows 10+</p>
+          </div>
+        </div>
+        <div class="device" id="9">
+          <div class="device-inner" id="9">
+            <img src="assets/carat.png" class="carat" id="9">
+            <div class="device-flex" id="9">
+              <img class="img-fluid" src="assets/web/samsung.png">
+              <p class="device-name">Samsung</p>
+            </div>
+          </div>
+          <div class="dropdown" id="9">
+              <p class="device-name drop-text">Samsung</p>
+              <p class="help-text">Visit our <a href="#">Help Center</a></p>
+              <p class="version-info">Windows 10+</p>
+          </div>
+        </div>
+        <div class="device" id="10">
+          <div class="device-inner" id="10">
+            <img src="assets/carat.png" class="carat" id="10">
+            <div class="device-flex" id="10">
+              <img class="img-fluid" src="assets/web/firetv.png">
+              <p class="device-name">Amazon Fire TV</p>
+            </div>
+          </div>
+          <div class="dropdown" id="10">
+              <p class="device-name drop-text">Amazon Fire Tv</p>
+              <button class="drop-btn">DOWNLOAD APP</button>
+              <p class="help-text">Visit our <a href="#">Help Center</a></p>
+              <p class="version-info">Windows 10+</p>
           </div>
         </div>
       </div>
-      <div class="row mob mob-off" id="tvp-row">
-        <div class="col-6 col-md-3">
-          <div class="device" id="m5">
-            <div class="device-inner" id="m5">
-              <img src="assets/carat.png" class="carat" id="m5">
-              <div class="device-flex" id="m5">
-                <img class="img-fluid" src="assets/web/appletv.png">
-                <p class="device-name">Apple TV</p>
-              </div>
-            </div>
-            <div class="dropdown no-btn" id="5">
-              <button class="drop-btn">DOWNLOAD APP</button>
-              <p class="help-text">Visit our <a href="#">Help Center</a></p>
-              <p class="version-info">Windows 10+</p>
+      <div class="col-6 col-md-3">
+        <div class="device" id="11">
+          <div class="device-inner" id="11">
+            <img src="assets/carat.png" class="carat" id="11">
+            <div class="device-flex" id="11">
+              <img class="img-fluid" src="assets/web/xbox-one.png">
+              <p class="device-name">Xbox One</p>
             </div>
           </div>
-          <div class="device" id="m6">
-            <div class="device-inner" id="m6">
-              <img src="assets/carat.png" class="carat" id="m6">
-              <div class="device-flex" id="m6">
-                <img class="img-fluid" src="assets/web/android.png">
-                <p class="device-name">Android TV</p>
-              </div>
-            </div>
-            <div class="dropdown" id="m6">
-              <button class="drop-btn">DOWNLOAD APP</button>
-              <p class="help-text">Visit our <a href="#">Help Center</a></p>
-              <p class="version-info">Windows 10+</p>
-            </div>
-          </div>
-          <div class="device" id="m7">
-            <div class="device-inner" id="m7">
-              <img src="assets/carat.png" class="carat" id="m7">
-              <div class="device-flex" id="m7">
-                <img class="img-fluid" src="assets/web/chromecast.png">
-                <p class="device-name">Chromecast</p>
-              </div>
-            </div>
-            <div class="dropdown" id="m7">
-              <button class="drop-btn">DOWNLOAD APP</button>
-              <p class="help-text">Visit our <a href="#">Help Center</a></p>
-              <p class="version-info">Windows 10+</p>
-            </div>
+          <div class="dropdown" id="11">
+            <p class="device-name drop-text">Xbox One</p>
+            <p class="help-text">Visit our <a href="#">Help Center</a></p>
+            <p class="version-info">Windows 10+</p>
           </div>
         </div>
-        <div class="col-6 col-md-3">
-          <div class="device" id="m8">
-            <div class="device-inner" id="m8">
-              <img src="assets/carat.png" class="carat" id="m8">
-              <div class="device-flex" id="m8">
-                <img class="img-fluid" src="assets/web/roku.png">
-                <p class="device-name">Roku</p>
-              </div>
-            </div>
-            <div class="dropdown" id="m8">
-              <button class="drop-btn">DOWNLOAD APP</button>
-              <p class="help-text">Visit our <a href="#">Help Center</a></p>
-              <p class="version-info">Windows 10+</p>
+        <div class="device" id="12">
+          <div class="device-inner" id="12">
+            <img src="assets/carat.png" class="carat" id="12">
+            <div class="device-flex" id="12">
+              <img class="img-fluid" src="assets/web/ps4.png">
+              <p class="device-name">PlayStation 4</p>
             </div>
           </div>
-          <div class="device" id="m9">
-            <div class="device-inner" id="m9">
-              <img src="assets/carat.png" class="carat" id="m9">
-              <div class="device-flex" id="m9">
-                <img class="img-fluid" src="assets/web/samsung.png">
-                <p class="device-name">Samsung</p>
-              </div>
-            </div>
-            <div class="dropdown" id="m9">
-              <button class="drop-btn">DOWNLOAD APP</button>
-              <p class="help-text">Visit our <a href="#">Help Center</a></p>
-              <p class="version-info">Windows 10+</p>
-            </div>
-          </div>
-          <div class="device" id="m10">
-            <div class="device-inner" id="m10">
-              <img src="assets/carat.png" class="carat" id="m10">
-              <div class="device-flex" id="m10">
-                <img class="img-fluid" src="assets/web/firetv.png">
-                <p class="device-name">Amazon Fire TV</p>
-              </div>
-            </div>
-            <div class="dropdown" id="m10">
-              <button class="drop-btn">DOWNLOAD APP</button>
-              <p class="help-text">Visit our <a href="#">Help Center</a></p>
-              <p class="version-info">Windows 10+</p>
-            </div>
+          <div class="dropdown" id="12">
+            <p class="device-name drop-text">PlayStation 4</p>
+            <p class="help-text">Visit our <a href="#">Help Center</a></p>
+            <p class="version-info">Windows 10+</p>
           </div>
         </div>
       </div>
-      <div class="row mob mob-off" id="consoles-row">
-        <div class="col-6 col-md-3">
-          <div class="device" id="m11">
-            <div class="device-inner" id="11">
-              <img src="assets/carat.png" class="carat" id="m11">
-              <div class="device-flex" id="m11">
-                <img class="img-fluid" src="assets/web/xbox-one.png">
-                <p class="device-name">Xbox One</p>
-              </div>
-            </div>
-            <div class="dropdown" id="m11">
-              <button class="drop-btn">DOWNLOAD APP</button>
-              <p class="help-text">Visit our <a href="#">Help Center</a></p>
-              <p class="version-info">Windows 10+</p>
+      <div class="col-6 col-md-3">
+        <div class="device" id="13">
+          <div class="device-inner" id="13">
+            <img src="assets/carat.png" class="carat" id="13">
+            <div class="device-flex" id="13">
+              <img class="img-fluid" src="assets/web/alexa2.png">
+              <p class="device-name">Amazon Alexa</p>
             </div>
           </div>
+          <div class="dropdown" id="13">
+            <p class="device-name drop-text">Amazon Alexa</p>
+            <p class="help-text">Visit our <a href="#">Help Center</a></p>
+            <p class="version-info">Windows 10+</p>
+          </div>
         </div>
-        <div class="col-6 col-md-3">
-          <div class="device" id="m12">
-            <div class="device-inner" id="m12">
-              <img src="assets/carat.png" class="carat" id="m12">
-              <div class="device-flex" id="m12">
-                <img class="img-fluid" src="assets/web/ps4.png">
-                <p class="device-name">PlayStation 4</p>
-              </div>
+        <div class="device" id="14">
+          <div class="device-inner" id="14">
+            <img src="assets/carat.png" class="carat" id=14"">
+            <div class="device-flex" id="14">
+              <img class="img-fluid" src="assets/web/google-home.png">
+              <p class="device-name">Google Home</p>
             </div>
-            <div class="dropdown" id="m12">
-              <button class="drop-btn">DOWNLOAD APP</button>
-              <p class="help-text">Visit our <a href="#">Help Center</a></p>
-              <p class="version-info">Windows 10+</p>
-            </div>
+          </div>
+          <div class="dropdown" id="14">
+            <p class="device-name drop-text">Google Home</p>
+            <p class="help-text">Visit our <a href="#">Help Center</a></p>
+            <p class="version-info">Windows 10+</p>
           </div>
         </div>
       </div>
-      <div class="row mob mob-off" id="smarthome-row">
-        <div class="col-6 col-md-3">
-          <div class="device" id="m13">
-            <div class="device-inner" id="m13">
-              <img src="assets/carat.png" class="carat" id="m13">
-              <div class="device-flex" id="m13">
-                <img class="img-fluid" src="assets/web/alexa2.png">
-                <p class="device-name">Amazon Alexa</p>
-              </div>
-            </div>
-            <div class="dropdown" id="m13">
-              <button class="drop-btn">DOWNLOAD APP</button>
-              <p class="help-text">Visit our <a href="#">Help Center</a></p>
-              <p class="version-info">Windows 10+</p>
+    </div>
+    <div class="row mob mob-on" id="ctp-row">
+      <div class="col-6 col-md-3">
+        <div class="device" id="m1">
+          <div class="device-inner" id="m1">
+            <img src="assets/carat.png" class="carat" id="m1">
+            <div class="device-flex" id="m1">
+              <img src="assets/web/microsoft.png">
+              <p class="device-name">Windows 10</p>
             </div>
           </div>
+          <div class="dropdown w-btn" id="m1">
+            <p class="device-name drop-text">Windows 10</p>
+            <button class="drop-btn">DOWNLOAD APP</button>
+            <p class="help-text">Visit our <a href="#">Help Center</a></p>
+            <p class="version-info">Windows 10+</p>
+          </div>
         </div>
-        <div class="col-6 col-md-3">
-          <div class="device" id="m14">
-            <div class="device-inner" id="m14">
-              <img src="assets/carat.png" class="carat" id="m14">
-              <div class="device-flex" id="m14">
-                <img class="img-fluid" src="assets/web/google-home.png">
-                <p class="device-name">Google Home</p>
-              </div>
+        <div class="device" id="m3">
+          <div class="device-inner" id="m3">
+            <img src="assets/carat.png" class="carat" id="m3">
+            <div class="device-flex" id="m3">
+              <img class="img-fluid" src="assets/web/apple.png">
+              <p class="device-name">Apple</p>
             </div>
-            <div class="dropdown" id="m14">
-              <button class="drop-btn">DOWNLOAD APP</button>
-              <p class="help-text">Visit our <a href="#">Help Center</a></p>
-              <p class="version-info">Windows 10+</p>
+          </div>
+          <div class="dropdown" id="m3">
+            <p class="device-name drop-text">Apple</p>
+            <button class="drop-btn">DOWNLOAD APP</button>
+            <p class="help-text">Visit our <a href="#">Help Center</a></p>
+            <p class="version-info">iOS 9+</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="device" id="m2">
+          <div class="device-inner" id="m2">
+            <img src="assets/carat.png" class="carat" id="m2">
+            <div class="device-flex" id="m2">
+              <img class="img-fluid"src="assets/web/android.png">
+              <p class="device-name">Android</p>
             </div>
+          </div>
+          <div class="dropdown" id="m2">
+            <p class="device-name drop-text">Android</p>
+            <button class="drop-btn">DOWNLOAD APP</button>
+            <p class="help-text">Visit our <a href="#">Help Center</a></p>
+            <p class="version-info">Android 4.1+</p>
+          </div>
+        </div>
+        <div class="device" id="m4">
+          <div class="device-inner" id="m4">
+            <img src="assets/carat.png" class="carat" id="m4">
+            <div class="device-flex" id="m4">
+              <img class="img-fluid" src="assets/web/cbs.png">
+              <p class="device-name">CBS.com</p>
+            </div>
+          </div>
+          <div class="dropdown" id="m4">
+            <p class="device-name drop-text">CBS.com</p>
+            <button class="drop-btn">DOWNLOAD APP</button>
+            <p class="help-text">Visit our <a href="#">Help Center</a></p>
+            <p class="version-info">Windows 10+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mob mob-off" id="tvp-row">
+      <div class="col-6 col-md-3">
+        <div class="device" id="m5">
+          <div class="device-inner" id="m5">
+            <img src="assets/carat.png" class="carat" id="m5">
+            <div class="device-flex" id="m5">
+              <img class="img-fluid" src="assets/web/appletv.png">
+              <p class="device-name">Apple TV</p>
+            </div>
+          </div>
+          <div class="dropdown" id="5">
+            <p class="device-name drop-text">Apple TV</p>
+            <p class="help-text">Visit our <a href="#">Help Center</a></p>
+            <p class="version-info">Windows 10+</p>
+          </div>
+        </div>
+        <div class="device" id="m6">
+          <div class="device-inner" id="m6">
+            <img src="assets/carat.png" class="carat" id="m6">
+            <div class="device-flex" id="m6">
+              <img class="img-fluid" src="assets/web/android.png">
+              <p class="device-name">Android TV</p>
+            </div>
+          </div>
+          <div class="dropdown" id="m6">
+            <p class="device-name drop-text">Android TV</p>
+            <button class="drop-btn">DOWNLOAD APP</button>
+            <p class="help-text">Visit our <a href="#">Help Center</a></p>
+            <p class="version-info">Windows 10+</p>
+          </div>
+        </div>
+        <div class="device" id="m7">
+          <div class="device-inner" id="m7">
+            <img src="assets/carat.png" class="carat" id="m7">
+            <div class="device-flex" id="m7">
+              <img class="img-fluid" src="assets/web/chromecast.png">
+              <p class="device-name">Chromecast</p>
+            </div>
+          </div>
+          <div class="dropdown" id="m7">
+            <p class="device-name drop-text">Chromecast</p>
+            <p class="help-text">Visit our <a href="#">Help Center</a></p>
+            <p class="version-info">Windows 10+</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="device" id="m8">
+          <div class="device-inner" id="m8">
+            <img src="assets/carat.png" class="carat" id="m8">
+            <div class="device-flex" id="m8">
+              <img class="img-fluid" src="assets/web/roku.png">
+              <p class="device-name">Roku</p>
+            </div>
+          </div>
+          <div class="dropdown" id="m8">
+            <p class="device-name drop-text">Roku</p>
+            <button class="drop-btn">DOWNLOAD APP</button>
+            <p class="help-text">Visit our <a href="#">Help Center</a></p>
+            <p class="version-info">Windows 10+</p>
+          </div>
+        </div>
+        <div class="device" id="m9">
+          <div class="device-inner" id="m9">
+            <img src="assets/carat.png" class="carat" id="m9">
+            <div class="device-flex" id="m9">
+              <img class="img-fluid" src="assets/web/samsung.png">
+              <p class="device-name">Samsung</p>
+            </div>
+          </div>
+          <div class="dropdown" id="m9">
+            <p class="device-name drop-text">Samsung</p>
+            <p class="help-text">Visit our <a href="#">Help Center</a></p>
+            <p class="version-info">Windows 10+</p>
+          </div>
+        </div>
+        <div class="device" id="m10">
+          <div class="device-inner" id="m10">
+            <img src="assets/carat.png" class="carat" id="m10">
+            <div class="device-flex" id="m10">
+              <img class="img-fluid" src="assets/web/firetv.png">
+              <p class="device-name">Amazon Fire TV</p>
+            </div>
+          </div>
+          <div class="dropdown" id="m10">
+            <p class="device-name drop-text">Amazon Fire Tv</p>
+            <button class="drop-btn">DOWNLOAD APP</button>
+            <p class="help-text">Visit our <a href="#">Help Center</a></p>
+            <p class="version-info">Windows 10+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mob mob-off" id="consoles-row">
+      <div class="col-6 col-md-3">
+        <div class="device" id="m11">
+          <div class="device-inner" id="11">
+            <img src="assets/carat.png" class="carat" id="m11">
+            <div class="device-flex" id="m11">
+              <img class="img-fluid" src="assets/web/xbox-one.png">
+              <p class="device-name">Xbox One</p>
+            </div>
+          </div>
+          <div class="dropdown" id="m11">
+            <p class="device-name drop-text">Xbox One</p>
+            <p class="help-text">Visit our <a href="#">Help Center</a></p>
+            <p class="version-info">Windows 10+</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="device" id="m12">
+          <div class="device-inner" id="m12">
+            <img src="assets/carat.png" class="carat" id="m12">
+            <div class="device-flex" id="m12">
+              <img class="img-fluid" src="assets/web/ps4.png">
+              <p class="device-name">PlayStation 4</p>
+            </div>
+          </div>
+          <div class="dropdown" id="m12">
+            <p class="device-name drop-text">PlayStation 4</p>
+            <p class="help-text">Visit our <a href="#">Help Center</a></p>
+            <p class="version-info">Windows 10+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mob mob-off" id="smarthome-row">
+      <div class="col-6 col-md-3">
+        <div class="device" id="m13">
+          <div class="device-inner" id="m13">
+            <img src="assets/carat.png" class="carat" id="m13">
+            <div class="device-flex" id="m13">
+              <img class="img-fluid" src="assets/web/alexa2.png">
+              <p class="device-name">Amazon Alexa</p>
+            </div>
+          </div>
+          <div class="dropdown" id="m13">
+            <p class="device-name drop-text">Amazon Alexa</p>
+            <p class="help-text">Visit our <a href="#">Help Center</a></p>
+            <p class="version-info">Windows 10+</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="device" id="m14">
+          <div class="device-inner" id="m14">
+            <img src="assets/carat.png" class="carat" id="m14">
+            <div class="device-flex" id="m14">
+              <img class="img-fluid" src="assets/web/google-home.png">
+              <p class="device-name">Google Home</p>
+            </div>
+          </div>
+          <div class="dropdown" id="m14">
+            <p class="device-name drop-text">Google Home</p>
+            <p class="help-text">Visit our <a href="#">Help Center</a></p>
+            <p class="version-info">Windows 10+</p>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 </div>
 
 <div class="footer"></div>
@@ -571,6 +558,10 @@ $(function(){
     $('#tabs-web').addClass('sticky-top-tabs')
   }
 });
+
+// $('#tabs-web').click(function(event){
+//   location.href = "#tabbar";
+// })
 
 
 
@@ -609,9 +600,26 @@ $(function(){
         break;
         default: break;
       }
+    } else {
+      location.href = "#anchor";
     }
   });
 });
+
+var terms = $("ul li");
+
+function rotateTerm() {
+
+  var ct = $("#rotate").data("term") || 0;
+
+  // console.log(terms.eq([ct]).text());
+
+  $("#rotate").data("term",
+  ct == terms.length -1 ? 0 : ct + 1).text(terms.eq([ct]).text())
+  .fadeIn().delay(2000).fadeOut(200, rotateTerm);
+
+}
+$(rotateTerm);
 
 // function goToByScroll(div) {
 //   // Scroll
